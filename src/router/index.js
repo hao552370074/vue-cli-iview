@@ -9,10 +9,13 @@ const ss = () => import("../views/main/index.vue");
 // one
 const one=()=>import("../views/one/index.vue")
 
+let base = `${process.env.BASE_URL}`
+
 // 路由
 const router = new Router({
-  mode: "history",
-  //   base: process.env.BASE_URL,
+  // mode: "history",
+  // mode: "hash",
+    base: base,
   routes: [
     {
       path: "/",

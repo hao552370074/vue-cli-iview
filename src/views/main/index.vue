@@ -67,7 +67,7 @@
               <Icon type="ios-cafe"></Icon>Breadcrumb
             </BreadcrumbItem>
           </Breadcrumb>
-          <Card style="height:87vh" dis-hover="false">
+          <Card style="height:87vh" :dis-hover="true">
             <router-view></router-view>
           </Card>
         </Content>
